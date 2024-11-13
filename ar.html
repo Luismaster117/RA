@@ -8,22 +8,21 @@
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 </head>
 <body style="margin:0; overflow:hidden;">
-    
+
     <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
-      
         <a-assets>
-            <a-asset-item id="tesla" src="modelos/tesla_roadster_2020.glb">              
-            </a-asset-item>
-            <a-asset-item id="toyota" src="modelos/toyota_hilux_revo_prerunner_2021.glb">
-            </a-asset-item>
+            <a-assent-item id="tesla" src="modelos/tesla_roadster_2020.glb"></a-assent-item>
+            <a-assent-item id="toyota" src="modelos/toyota_hilux_revo_prerunner_2021.glb"></a-assent-item>
         </a-assets>
-        <a-marker present="hiro">
-            <a_entity gltf-model="#tesla" rotation="0 90 -90" scale="2 2 2" position="0.3 0 0"></a_entity>
+        <a-marker type="pattern" url="marcadores/pattern-Testa.patt">
+            <a-entity gltf-model="#tesla" rotation="0 90 -90" 
+            scale="2 2 2" position="0.3 0 0"></a-entity>
         </a-marker>
         <a-marker type="pattern" url="marcadores/pattern-Toyota.patt">
-            <a_entity gltf-model="#toyota" rotation="0 90 -90" scale="2 2 2" position="0.3 0 0"></a_entity>
+        <a-entity gltf-model="#toyota" rotation="0 90 -90" 
+        scale="2 2 2" position="0.3 0 0"></a-entity>
         </a-marker>
-      <a-entity camera></a-entity>
-      </a-scene>
+        <a-entity camera></a-entity>
+    </a-scene>
 </body>
 </html>
